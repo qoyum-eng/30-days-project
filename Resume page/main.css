@@ -1,0 +1,40 @@
+* {
+    box-sizing: 50px;
+}
+body {
+    font-family: Arial,sans-serif;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 40px;
+    background: linear-gradient(135deg, #f4f7fb, #e8eef7);
+    color: black;
+}
+header {
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    font-size: 50px;
+}
+h2 {
+    text-align: center;
+}
+section {
+    text-align: center;
+}
+footer {
+    text-align: center;
+}
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.skill {
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    margin: 20px;
+}
