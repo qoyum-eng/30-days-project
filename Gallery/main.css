@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 100px;
+}
+h1 {
+    text-align: center;
+
+}
+.gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
