@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(231, 212, 212);
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+nav a:hover {
+    color: royalblue;
+}
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
