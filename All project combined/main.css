@@ -1,0 +1,151 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2563eb;
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+nav a:hover {
+    color: royalblue;
+}
+img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+header img{
+    margin-right: 650px;
+}
+.hero {
+    text-align: center;
+    padding: 60px;
+}
+.hero li {
+    margin: 10px;
+}
+.hero ul {
+    list-style: none;
+    padding: 0;
+}
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.pricing-card {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.pricing-card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+}
+.pricing-card h2 {
+    font-size: 24px;
+    color: #2563eb;
+}
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+.pricing-card li {
+    margin: 10px 0;
+}
+button {
+    background-color: #0f172a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+ button:hover {
+    background-color: #0f172a;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pricing-card:hover{
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+.form-container{
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    rounded corners: 10px;
+    shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #0f172a;
+    outline: none;
+    background: transparent;
+    border-radius: 0px;
+}
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.input-group input{
+    flex: 1;
+    border: none;
+    border-bottom: 2px solid #0f172a;
+    outline: none;
+    background: transparent;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.input-group label {
+    margin-right: 10px;
+    margin-bottom: nowrap;
+}
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.terms input {
+    width: auto;
+}
