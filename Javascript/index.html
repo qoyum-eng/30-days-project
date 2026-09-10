@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Story</h2>
+
+    <p class="intro">
+        My name is <b>Razaq Qoyum</b>. I'm <b>49</b> years old and I live at<b>No. 17 Tapa Street</b>.
+    </p>
+
+    <p id="demo"></p>
+
+    <script>
+        const myItems = document.getElementsByClassName("intro");
+
+        // This is the story about me (index 0)
+        document.getElementById("demo").innerHTML =
+            "My name is <b>Razaq Qoyum</b><br>and I am <bc>24</b> years old.";
+
+        myItems[0].innerHTML =
+            "My name is <b>Razaq Qoyum</b> and I am <b>18</b> years old.";
+    </script>
+    
+</body>
+</html>

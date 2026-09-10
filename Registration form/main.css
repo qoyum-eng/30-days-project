@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+form {
+    width: 300px;
+    min-height: 550px;
+    height: 510px;
+    border: 2px solid #ddd;
+    border-radius: 35px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0);
+    background: white;
+}
+form img {
+    display: block;
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin: 0px auto 20px;
+    border-radius: 50%;
+}
+form h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 70px;
+}
+form div {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+    padding: 8px 5px;
+}
+
+form div span {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+form input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+}
+form button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form button:hover {
+    background: #333;
+}
+form p {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+    color: #666;
+}
+
+form p a {
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: underline;
+}

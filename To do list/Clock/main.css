@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+    font-family: Arial, sans-serif;
+}
+
+.clock {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: #1f2937;
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+}
+
+#time {
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    text-shadow: 0 0 15px #00e5ff
+}
+
+#date {
+    color: #9ca3af;
+    font-size: 18px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.clock {
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+    }
+
+    to {
+        box-shadow: 0 0 40px rgba(0, 229, 255, 0.6);
+    }
+}
