@@ -2,14 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(231, 212, 212);
+    background-color: black;
     color: white;
 }
 nav {
     display: flex;
     justify-content: center;
     background-color: white;
-}
+    box-shadow: white;
+}   
 nav ul {
     list-style-type: none;
     margin: 0;
