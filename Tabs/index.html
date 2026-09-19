@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div class="tabs">
+        <div class="tab-buttons">
+            <button onclick="openTab('home')">Home</button>
+            <button onclick="openTab('about')">About</button>
+            <button onclick="openTab('services')">Services</button>
+        </div>
+        <div id="home" class="tab-content">
+            <h2>Home</h2>
+            <p>Welcome to my website</p>
+        </div>
+        <div id="about" class="tab-content">
+            <h2>About</h2>
+            <p>This is about section</p>
+        </div>
+        <div id="services" class="tab-content">
+            <h2>Services</h2>
+            <p>These are my services</p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
