@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 50px;
+}
+
+.accordion {
+    max-width: 600px;
+    margin: auto;
+}
+
+.accordion-item {
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-btn {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background: white;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.accordion-content {
+    padding: 0 20px;
+}
