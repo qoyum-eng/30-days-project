@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #111827, #1e1b4b);
+    color: white;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+#movieInput {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+#searchBtn {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #7c3aed;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#searchBtn:hover {
+    background: #9333ea;
+}
+
+.movie-card {
+    background: #ffffff;
+    color: #222;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.movie-card img {
+    width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.movie-card h2 {
+    margin-bottom: 15px;
+}
+
+.movie-card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 18px;
+}
