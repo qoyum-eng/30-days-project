@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f4ef">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="generator" aria-labelledby="page-title">
+        <header class="topbar">
+            <a class="wordmark" href="#" aria-label="Keysmith home">
+                <span class="brand-mark" aria-hidden="true">K</span>
+                <span>keysmith<span class="wordmark-dot">.</span></span>
+            </a>
+            <span class="topbar-note"><span class="status-dot" aria-hidden="true"></span> PRIVATE BY DESIGN</span>
+        </header>
+
+        <section class="workspace">
+            <div class="intro">
+                <p class="eyebrow">YOUR KEYS, YOUR RULES</p>
+                <h1 id="page-title">A stronger<br><span>way in.</span></h1>
+                <p class="intro-copy">Make a password that means business. Generated on your device, never stored.</p>
+            </div>
+
+            <section class="tool" aria-label="Password generator">
+                <div class="tool-heading">
+                    <div>
+                        <p class="section-kicker">PASSWORD STUDIO</p>
+                        <h2>Your new password</h2>
+                    </div>
+                    <span class="secure-label"><span aria-hidden="true">&#9679;</span> LOCAL ONLY</span>
+                </div>
+
+                <div class="result-box">
+                    <output id="password" class="password" aria-live="polite" aria-label="Generated password"></output>
+                    <button id="copy-button" class="copy-button" type="button" aria-label="Copy password" title="Copy password">
+                        <svg class="copy-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"></path></svg>
+                    </button>
+                </div>
+                <p id="copy-status" class="copy-status" aria-live="polite">Click the icon to copy</p>
+
+                <div class="strength-row" aria-label="Password strength">
+                    <div class="strength-meter" aria-hidden="true"><span id="strength-fill"></span></div>
+                    <span id="strength-label" class="strength-label">STRONG</span>
+                </div>
+
+                <div class="control-block length-block">
+                    <div class="control-heading">
+                        <label for="length">Password length</label>
+                        <output id="length-value" for="length">20</output>
+                    </div>
+                    <input id="length" class="length-slider" type="range" min="8" max="48" value="20">
+                    <div class="range-ends"><span>8</span><span>48</span></div>
+                </div>
+
+                <fieldset class="control-block character-options">
+                    <legend>Include characters</legend>
+                    <label class="option"><input id="uppercase" type="checkbox" checked><span class="checkmark" aria-hidden="true"></span><span>Uppercase <span class="option-sample">A-Z</span></span></label>
+                    <label class="option"><input id="lowercase" type="checkbox" checked><span class="checkmark" aria-hidden="true"></span><span>Lowercase <span class="option-sample">a-z</span></span></label>
+                    <label class="option"><input id="numbers" type="checkbox" checked><span class="checkmark" aria-hidden="true"></span><span>Numbers <span class="option-sample">0-9</span></span></label>
+                    <label class="option"><input id="symbols" type="checkbox" checked><span class="checkmark" aria-hidden="true"></span><span>Symbols <span class="option-sample">!@#$</span></span></label>
+                </fieldset>
+
+                <p id="error-message" class="error-message" role="alert"></p>
+                <button id="generate-button" class="generate-button" type="button">
+                    <span>Generate password</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"></path><path d="M5.6 9a7 7 0 0 1 11.8-2L20 12M4 12l2.6 5a7 7 0 0 0 11.8-2"></path></svg>
+                </button>
+                <p class="security-note"><span aria-hidden="true">&#10003;</span> Secure randomness from your browser</p>
+            </section>
+        </section>
+
+        <footer class="footer"><span>MAKE EVERY LOGIN COUNT.</span><span>KEYSMITH <span class="footer-year">/ 2026</span></span></footer>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>
