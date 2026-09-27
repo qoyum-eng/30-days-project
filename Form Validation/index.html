@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Validation</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<main class="form-card">
+		<h1>Create an account</h1>
+		<p class="intro">Fill in the details below to get started.</p>
+
+		<form id="signup-form" novalidate>
+			<label for="name">Name</label>
+			<input id="name" name="name" type="text" placeholder="Your name">
+			<small class="error" id="name-error"></small>
+
+			<label for="email">Email</label>
+			<input id="email" name="email" type="email" placeholder="you@example.com">
+			<small class="error" id="email-error"></small>
+
+			<label for="password">Password</label>
+			<input id="password" name="password" type="password" placeholder="At least 8 characters">
+			<small class="error" id="password-error"></small>
+
+			<label for="confirm-password">Confirm password</label>
+			<input id="confirm-password" name="confirm-password" type="password" placeholder="Type it again">
+			<small class="error" id="confirm-password-error"></small>
+
+			<button type="submit">Sign up</button>
+			<p class="success" id="success-message" role="status"></p>
+		</form>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
